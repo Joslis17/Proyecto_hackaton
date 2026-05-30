@@ -1,0 +1,63 @@
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL (Caja de Bienvenida)
+   ========================================================================== */
+.form-container {
+  max-width: 700px; /* Mismo ancho imponente que le diste al formulario */
+  margin: 80px auto; /* Un poco más de espacio hacia abajo desde el techo */
+  padding: 50px; /* Espacio interno amplio para que se vea elegante */
+  background-color: #0b1426; /* Tu azul oscuro profundo de confianza */
+  border-radius: 16px; /* Esquinas redondeadas modernas */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4); /* Sombra difuminada profesional */
+  font-family: sans-serif;
+  border: 1px solid #1e293b; /* Borde sutil para resaltar */
+  text-align: center;
+}
+
+/* ==========================================================================
+     TÍTULO DE BIENVENIDA
+     ========================================================================== */
+.form-title {
+  color: #ffffff; /* Letras blancas brillantes */
+  margin-bottom: 40px; /* Espacio generoso antes de ver los botones */
+  font-size: 32px; /* Título grande y llamativo */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+     CONTENEDOR DE LOS BOTONES
+     ========================================================================== */
+.custom-form {
+  display: flex;
+  flex-direction: column; /* Los botones se apilan uno abajo del otro */
+  gap: 24px; /* Separación perfecta de 24px entre ambos botones */
+}
+
+/* ==========================================================================
+     BOTONES MORADOS INTERACTIVOS
+     ========================================================================== */
+.submit-btn {
+  background-color: #7c3aed; /* Tu color morado característico */
+  color: #ffffff; /* Texto en blanco */
+  padding: 18px 30px; /* Botones más altos y cómodos para hacer clic */
+  border: none;
+  border-radius: 12px; /* Esquinas redondeadas en los botones */
+  font-size: 18px; /* Tamaño de letra legible e importante */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Animación suave al pasar el mouse */
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2); /* Sutil brillo morado abajo */
+}
+
+/* Efecto cuando pasas el mouse por encima del botón */
+.submit-btn:hover {
+  background-color: #6d28d9; /* Se oscurece elegantemente el morado */
+  transform: translateY(-2px); /* El botón sube 2 píxeles flotando sutilmente */
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4); /* El brillo morado aumenta */
+}
+
+/* Efecto cuando haces clic en el botón */
+.submit-btn:active {
+  transform: translateY(0); /* Vuelve a su posición original al presionarlo */
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+}

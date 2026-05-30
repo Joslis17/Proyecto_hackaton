@@ -1,0 +1,117 @@
+/* Contenedor principal */
+.registro-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Botón de volver */
+.back-btn {
+  background: transparent;
+  color: #a78bfa;
+  border: 1px solid #7c3aed;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  float: left;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+/* Título */
+.registro-title {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 40px;
+  clear: both;
+  font-weight: 700;
+}
+
+/* Grid de Tarjetas (Responsivo) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Tarjeta de Usuario Individual */
+.user-card {
+  background-color: #0b1426; /* Tu azul oscuro */
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  border-color: #7c3aed;
+}
+
+/* Contenedor circular de la foto de perfil */
+.profile-img-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #7c3aed; /* Borde morado de perfil */
+  margin-bottom: 15px;
+  background-color: #111b2d;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nombre del usuario */
+.user-name {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+/* Botón de Crear Quiniela */
+.create-quiniela-btn {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.create-quiniela-btn:hover {
+  background-color: #6d28d9;
+}
+
+/* Mensajes de estado */
+.loading-text,
+.no-data {
+  color: #e2e8f0;
+  font-size: 18px;
+}
+
+.error-card {
+  background-color: #ff002b;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+}

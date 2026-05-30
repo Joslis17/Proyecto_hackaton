@@ -1,0 +1,96 @@
+/* Contenedor del Formulario con fondo Azul Oscuro - ¡MÁS GRANDE! */
+.form-container {
+  max-width: 550px; /* Aumentado de 400px a 550px para dar más espacio */
+  margin: 60px auto; /* Un poco más de margen arriba y abajo */
+  padding: 40px; /* Más espacio interno para que respire el diseño */
+  background-color: #0b1426; /* Azul oscuro profundo */
+  border-radius: 16px; /* Esquinas un poco más suaves y modernas */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4); /* Sombra más imponente */
+  font-family: sans-serif;
+  border: 1px solid #1e293b;
+}
+
+/* Título en Blanco */
+.form-title {
+  text-align: center;
+  color: #ffffff; /* Blanco */
+  margin-bottom: 30px; /* Más separación con los campos */
+  font-size: 28px; /* Título más grande y llamativo */
+  font-weight: 700;
+}
+
+/* Formulario */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Más espacio de separación entre bloques de preguntas */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Más separación entre la etiqueta y su caja de texto */
+}
+
+/* Labels en Blanco/Gris claro */
+.form-group label {
+  color: #e2e8f0;
+  font-size: 16px; /* Texto de etiquetas más legible */
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Inputs de texto más cómodos */
+.form-group input {
+  padding: 14px 16px; /* Cajas de texto más altas y espaciosas */
+  border: 2px solid #1e293b;
+  border-radius: 10px; /* Bordes redondeados acordes al contenedor */
+  background-color: #111b2d; /* Azul intermedio */
+  color: #ffffff; /* Texto que escribe el usuario en blanco */
+  font-size: 15px; /* Letra un punto más grande al escribir */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus del Input cambia a Morado */
+.form-group input:focus {
+  border-color: #7c3aed; /* Morado vibrante */
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.3); /* Pequeño brillo morado al escribir */
+}
+
+/* Botón Morado más imponente */
+.submit-btn {
+  background-color: #7c3aed; /* Morado */
+  color: #ffffff; /* Blanco */
+  padding: 14px; /* Botón más alto y fácil de cliquear */
+  border: none;
+  border-radius: 10px;
+  font-size: 18px; /* Letra del botón más grande */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #6d28d9; /* Morado más oscuro al pasar el mouse */
+}
+
+/* Estado cuando está cargando o deshabilitado */
+.submit-btn:disabled {
+  background-color: #4c1d95;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Alerta de Error en Rojo */
+.error-message {
+  background-color: #ff002b;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #800505;
+}
